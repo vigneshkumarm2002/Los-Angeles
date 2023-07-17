@@ -1,0 +1,601 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+
+.logo-text {
+    display: flex;
+    align-items: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-style: normal;
+
+}
+
+.logo-text h4 {
+    margin-top: 3px;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    line-height: 1;
+}
+
+.logo-text span {
+    display: block;
+    letter-spacing: 4px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.logo-text img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+
+header {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./assets/banner-mount.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    height: 50px;
+    visibility: hidden;
+    z-index: 998;
+    /* Ensure the .nav-bg is behind the nav element */
+}
+
+nav {
+
+    align-self: first baseline;
+    background-color: transparent;
+    width: 100%;
+    height: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 600;
+    z-index: 999;
+
+}
+
+
+
+nav img {
+    height: 40px;
+    margin-right: 10px;
+
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 10px;
+    text-decoration: underline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo-text {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.logo-text.hide {
+    display: none;
+}
+
+.nav-scroll .logo-text {
+    color: #414f6b;
+
+}
+
+.nav-scroll nav ul li a {
+    color: #414f6b;
+    font-size: 15px;
+
+}
+
+.nav-scroll nav {
+    position: fixed;
+    top: 0;
+    color: #414f6b;
+    height: 50px;
+
+}
+
+.nav-scroll .logo-text h4 {
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 0.9;
+}
+
+.nav-scroll .logo-text span {
+    display: block;
+    letter-spacing: 4px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 0.9;
+}
+
+.nav-scroll nav img {
+    border: 1px solid #414f6b;;
+    border-radius: 50%;
+}
+
+
+#history-section {
+    position: relative;
+    width: 100%;
+    height: 950px;
+    background-image: url("./assets/peaky.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    
+}
+
+.container {
+    width: 1000px;
+
+    padding: 10px 0px;
+    margin: 0px 10px;
+
+
+
+}
+
+.headField {
+    align-self: first baseline;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.headField h1 {
+    font-size: 130px;
+    color: #414f6b;
+    opacity: 60%;
+}
+
+.headField h5 {
+    font-size: 34px;
+    margin-top: 25px;
+    margin-left: -28px;
+    color: #414f6b;
+
+}
+
+.container .para {
+    padding: 0px 30px 0px 75px;
+    margin-top: -30px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.slider-container {
+    position: absolute;
+    width: 100%;
+    padding: 15px 0px;
+    background-color: bisque;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #414f6b;
+    opacity: 90%;
+}
+
+#owl-slider { 
+    width: 1000px;
+}
+
+#owl-slider .item {
+
+    margin-right: 10px;
+}
+
+#owl-demo .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#team-section {
+
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.team {
+    display: flex;
+    align-self: center;
+    gap: 30px;
+    justify-content: space-between;
+    margin: -15px 10px;
+    padding: 0px 30px 0px 10px;
+
+}
+
+.team p {
+    align-self: center;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    word-break: break-word;
+}
+
+@media (max-width: 1000px) {
+    .team {
+        width: 100%;
+        max-width: 1000px;
+        padding: 10px;
+
+    }
+    #owl-slider { 
+        width: 100%;
+        padding: 0px 10px;    }
+
+
+}
+
+.tapping {
+    width: 100%;
+}
+
+.small-rect {
+    width: 100%;
+    height: 40px;
+    background-color: #414f6b;
+    display: flex;
+    justify-content: center;
+}
+
+.small-rect ul {
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    gap: 20px;
+    margin: 0px 15px;
+
+}
+
+.tab-list {
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #b0b4be;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.tab-list.active {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #414f6b;
+
+    text-decoration: underline;
+}
+
+
+
+
+.tap-box {
+    position: relative;
+}
+
+.tap-box img {
+
+    width: 100%;
+    height: 510px;
+    object-fit: cover;
+}
+
+.tap {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px 35px 25px 35px;
+    top: 35%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+
+.tap li {
+    list-style-type: none;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+
+}
+
+.tap h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    color: #414f6b;
+}
+
+.tap span {
+    padding-left: 3em
+}
+
+.tap.active {
+    visibility: visible;
+}
+
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background-color: #414f6b;
+    display: flex;
+    justify-content: center;
+}
+
+.foot-container {
+    align-self: center;
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 15px;
+    color: white;
+
+}
+
+.foot-container h5 {
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+
+}
+
+
+.overly {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    background-color: #414f6b;
+    opacity: 70%;
+}
+
+.accordItem{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    border-bottom: 1px solid #414f6b;
+    background-color: white;
+    padding: 10px 10px;
+    cursor: pointer;
+    display: none;
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    color:#414f6b;
+    
+}
+
+  
+  .accordItem .material-symbols-outlined {
+    float: right;
+    color:#414f6b;
+  }
+.hide {
+    display: none;
+  }
+  .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+  }
+
+  .material-symbols-outlined.rotate {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+  }
+    
+    #history,
+    #team {
+     
+      opacity: 0;
+      transform: translateY(100%);
+      transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+      display: none;
+    }
+    
+    #history.show,
+    #team.show {
+        display: block;
+      opacity: 1;
+      transform: translateY(0);
+      
+    }
+
+    
+@media (max-width: 900px) {
+  
+    header {
+        width: 100%;
+        height: 800px;
+        background-image: url("./assets/banner-mount-tab.jpg");
+        background-size: cover;
+        object-fit: cover;
+       
+    }
+
+}
+@media (max-width: 600px) {
+  body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between ;
+  };
+.mobileView{
+    height: 1000px;
+}
+    header {
+        width: 100%;
+    height:600px;
+        background-image: url("./assets/banner-mob1.jpg");
+        background-size: cover;
+        object-fit: cover;
+       
+    }
+    #history-section {
+        height: 600px;
+        
+    }
+    .headField h1 {
+        font-size: 90px;
+      
+    }
+    
+    .headField h5 {
+        font-size: 22px;
+
+        margin-left: -20px;
+      
+    
+    }
+    .container .para {
+        padding: 0px 0px 0px 0px;
+        margin-top: -20px;
+        font-size: 14px;
+
+    }
+    .team {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        gap: 0px;
+        justify-content: space-between;
+        margin: 0px 0px;
+        padding: 0px 10px 10px 10px;
+    
+    }
+    .team p{
+        font-size: 14px;
+    }
+    .tap {
+        
+        padding: 15px 35px 25px 35px;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+       
+    }
+    .tap span {
+        padding-left: 1em
+    }
+    .tap h3 {
+
+        font-size: 24px;
+       
+    }
+    .tap li{
+
+        font-size: 14px;
+       
+    }
+    .tap-box img {
+
+    
+        height: 400px;
+       
+    }
+    .logo-text {
+        display: flex;
+        align-items: center;
+        font-family: 'Bebas Neue', sans-serif;
+        font-style: normal;
+    
+    }
+    
+    .logo-text h4 {
+        margin-top: 5px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 0.9;
+        letter-spacing: 2px;
+    }
+    
+    .logo-text span {
+        display: block;
+    letter-spacing: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 0.9;
+    letter-spacing: 3px;
+    }
+    footer {
+      
+        height: 50px;
+       
+    }
+    .overly {
+       
+        height: 50px;
+        
+    }
+    nav ul {
+        display: none;
+    }
+}
+
